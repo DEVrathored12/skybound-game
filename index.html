@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#07152e">
+  <meta name="description" content="Skybound — A free HTML5 flying arcade game. Fly through neon skies, dodge obstacles and beat your high score!">
+  <title>Skybound — Flying Arcade Game</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="logo" href="#">✦ SKYBOUND</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#how">How to Play</a>
+        <a href="#play" class="nav-cta">Play Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="stars" id="stars"></div>
+    <div class="hero-content">
+      <p class="eyebrow">✦ NIGHT FLIGHT ARCADE</p>
+      <h1>SKYBOUND</h1>
+      <p class="hero-sub">Fly through the neon skies. Dodge the pipes.<br>Beat your best score.</p>
+      <a href="#play" class="btn-primary">🎮 PLAY NOW — FREE</a>
+      <p class="hero-hint">No download · No login · Works on all devices</p>
+    </div>
+    <div class="hero-phone">
+      <div class="phone-frame">
+        <div class="phone-screen">
+          <div class="phone-preview">
+            <div class="preview-sky"></div>
+            <div class="preview-moon"></div>
+            <div class="preview-pipe pipe-top"></div>
+            <div class="preview-pipe pipe-bot"></div>
+            <div class="preview-player">✦</div>
+            <p class="preview-label">SKYBOUND</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <p class="eyebrow">ABOUT THE GAME</p>
+      <h2>What is Skybound?</h2>
+      <p class="section-sub">Skybound is a fast-paced HTML5 flying arcade game. Tap or click to keep your character airborne, dodge the green pipes and rack up points. Simple to learn — impossible to put down.</p>
+      <div class="cards">
+        <div class="card">
+          <div class="card-icon">🎯</div>
+          <h3>Simple Controls</h3>
+          <p>Tap, click or press Space to fly. One button is all you need.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🏆</div>
+          <h3>Beat Your Best</h3>
+          <p>Your high score is saved automatically. Keep pushing your limits.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🎵</div>
+          <h3>Full Audio</h3>
+          <p>Immersive background music and sound effects for every moment.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📱</div>
+          <h3>Play Anywhere</h3>
+          <p>Works perfectly on mobile, tablet and desktop browsers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW TO PLAY -->
+  <section class="section alt" id="how">
+    <div class="container">
+      <p class="eyebrow">HOW TO PLAY</p>
+      <h2>It's Easy to Start</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div>
+            <h3>Press Play</h3>
+            <p>Hit the PLAY button to start your flight into the neon night sky.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div>
+            <h3>Tap to Fly</h3>
+            <p>Tap the screen, click the mouse, or press Space to flap and gain height.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div>
+            <h3>Dodge the Pipes</h3>
+            <p>Fly through the gaps between green pipes. Each one you pass scores a point.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <div>
+            <h3>Reach Score 20</h3>
+            <p>Hit 20 points to complete the mission and win the game!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLAY SECTION -->
+  <section class="section" id="play">
+    <div class="container">
+      <p class="eyebrow">PLAY THE GAME</p>
+      <h2>Ready to Fly?</h2>
+      <p class="section-sub">The game loads instantly — no download or login needed.</p>
+      <div class="game-wrapper">
+        <iframe src="game/index.html" title="Skybound Game" allowfullscreen allow="autoplay"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p class="logo">✦ SKYBOUND</p>
+      <p>A free HTML5 Canvas Arcade Game</p>
+      <p class="footer-copy">© 2025 Skybound. Made with ❤️</p>
+    </div>
+  </footer>
+
+  <script src="site.js"></script>
+</body>
+</html>

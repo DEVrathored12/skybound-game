@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <meta name="theme-color" content="#07152e">
+  <title>Skybound — Flying Arcade</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <section class="game-shell" aria-label="Skybound flying game">
+      <canvas id="gameCanvas"></canvas>
+
+      <header class="hud" id="hud">
+        <div class="score-wrap">
+          <span class="score-label">SCORE</span>
+          <strong id="score">0</strong>
+        </div>
+        <div class="hud-actions">
+          <button class="icon-btn" id="pauseBtn" aria-label="Pause">Ⅱ</button>
+          <button class="icon-btn" id="soundBtn" aria-label="Sound">🔊</button>
+        </div>
+      </header>
+
+      <div class="overlay visible" id="startOverlay">
+        <div class="panel start-panel">
+          <div class="brand-mark">✦</div>
+          <p class="eyebrow">NIGHT FLIGHT</p>
+          <h1>SKYBOUND</h1>
+          <p class="subtitle">Fly through the neon skies.</p>
+          <div class="best-line">BEST <b id="startBest">0</b></div>
+          <button class="primary-btn" id="playBtn">PLAY</button>
+          <p class="hint">Tap · Click · Space to Fly</p>
+        </div>
+      </div>
+
+      <div class="overlay" id="pauseOverlay">
+        <div class="panel">
+          <p class="eyebrow">FLIGHT PAUSED</p>
+          <h2>PAUSED</h2>
+          <div class="button-stack">
+            <button class="primary-btn" id="resumeBtn">RESUME</button>
+            <button class="secondary-btn" id="pauseRestartBtn">RESTART</button>
+            <button class="text-btn" id="pauseHomeBtn">HOME</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="overlay" id="gameOverOverlay">
+        <div class="panel">
+          <div class="result-icon">✦</div>
+          <p class="eyebrow">FLIGHT ENDED</p>
+          <h2>GAME OVER</h2>
+          <div class="results">
+            <div><span>SCORE</span><b id="finalScore">0</b></div>
+            <div><span>BEST</span><b id="finalBest">0</b></div>
+          </div>
+          <div class="button-stack">
+            <button class="primary-btn" id="retryBtn">TRY AGAIN</button>
+            <button class="text-btn" id="gameOverHomeBtn">HOME</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="overlay" id="winOverlay">
+        <div class="panel win-panel">
+          <div class="result-icon win">★</div>
+          <p class="eyebrow">MISSION COMPLETE</p>
+          <h2>YOU WIN!</h2>
+          <p class="subtitle">Amazing Flight!</p>
+          <div class="results single"><div><span>FINAL SCORE</span><b id="winScore">20</b></div></div>
+          <div class="button-stack">
+            <button class="primary-btn" id="winRetryBtn">PLAY AGAIN</button>
+            <button class="text-btn" id="winHomeBtn">HOME</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="toast" id="toast">+1</div>
+    </section>
+    <p class="footer-note">Skybound • HTML5 Canvas Arcade</p>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
