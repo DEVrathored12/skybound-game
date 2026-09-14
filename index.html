@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#07152e">
-  <meta name="description" content="Skybound — A free HTML5 flying arcade game. Fly through neon skies, dodge obstacles and beat your high score!">
+  <meta name="description" content="Skybound — A free HTML5 flying arcade game by Raj Darji.">
   <title>Skybound — Flying Arcade Game</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
@@ -24,29 +24,19 @@
     </div>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero">
+  <!-- HERO / DASHBOARD -->
+  <section class="hero" id="home">
     <div class="stars" id="stars"></div>
     <div class="hero-content">
-      <p class="eyebrow">✦ NIGHT FLIGHT ARCADE</p>
-      <h1>SKYBOUND</h1>
+      <div class="profile-wrap">
+        <img src="raj1.jpeg" alt="Raj Darji" class="profile-img">
+        <div class="profile-glow"></div>
+      </div>
+      <h1 class="profile-name">RAJ DARJI</h1>
+      <p class="profile-tag">✦ NIGHT FLIGHT ARCADE</p>
       <p class="hero-sub">Fly through the neon skies. Dodge the pipes.<br>Beat your best score.</p>
       <a href="#play" class="btn-primary">🎮 PLAY NOW — FREE</a>
       <p class="hero-hint">No download · No login · Works on all devices</p>
-    </div>
-    <div class="hero-phone">
-      <div class="phone-frame">
-        <div class="phone-screen">
-          <div class="phone-preview">
-            <div class="preview-sky"></div>
-            <div class="preview-moon"></div>
-            <div class="preview-pipe pipe-top"></div>
-            <div class="preview-pipe pipe-bot"></div>
-            <div class="preview-player">✦</div>
-            <p class="preview-label">SKYBOUND</p>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -124,9 +114,16 @@
     <div class="container">
       <p class="eyebrow">PLAY THE GAME</p>
       <h2>Ready to Fly?</h2>
-      <p class="section-sub">The game loads instantly — no download or login needed.</p>
+      <p class="section-sub">Tap the game below to start playing instantly.</p>
       <div class="game-wrapper">
-        <iframe src="game/index.html" title="Skybound Game" allowfullscreen allow="autoplay"></iframe>
+        <iframe
+          id="gameFrame"
+          src="game/index.html"
+          title="Skybound Game"
+          allowfullscreen
+          allow="autoplay; scripts"
+          scrolling="no">
+        </iframe>
       </div>
     </div>
   </section>
@@ -135,7 +132,7 @@
   <footer class="footer">
     <div class="container">
       <p class="logo">✦ SKYBOUND</p>
-      <p>A free HTML5 Canvas Arcade Game</p>
+      <p>A free HTML5 Canvas Arcade Game by Raj Darji</p>
       <p class="footer-copy">© 2025 Skybound. Made with ❤️</p>
     </div>
   </footer>
