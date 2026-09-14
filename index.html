@@ -19,7 +19,7 @@
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#how">How to Play</a>
-        <a href="#play" class="nav-cta">Play Now</a>
+        <button class="nav-cta" id="navPlayBtn">Play Now</button>
       </div>
     </div>
   </nav>
@@ -35,7 +35,7 @@
       <h1 class="profile-name">RAJ DARJI</h1>
       <p class="profile-tag">✦ NIGHT FLIGHT ARCADE</p>
       <p class="hero-sub">Fly through the neon skies. Dodge the pipes.<br>Beat your best score.</p>
-      <a href="#play" class="btn-primary">🎮 PLAY NOW — FREE</a>
+      <button class="btn-primary" id="heroPlayBtn">🎮 PLAY NOW — FREE</button>
       <p class="hero-hint">No download · No login · Works on all devices</p>
     </div>
   </section>
@@ -109,22 +109,27 @@
     </div>
   </section>
 
+  <!-- GAME MODAL -->
+  <div class="game-modal" id="gameModal">
+    <div class="game-modal-inner">
+      <button class="close-btn" id="closeGame">✕ CLOSE</button>
+      <iframe
+        id="gameFrame"
+        title="Skybound Game"
+        allowfullscreen
+        allow="autoplay; scripts"
+        scrolling="no">
+      </iframe>
+    </div>
+  </div>
+
   <!-- PLAY SECTION -->
   <section class="section" id="play">
     <div class="container">
       <p class="eyebrow">PLAY THE GAME</p>
       <h2>Ready to Fly?</h2>
-      <p class="section-sub">Tap the game below to start playing instantly.</p>
-      <div class="game-wrapper">
-        <iframe
-          id="gameFrame"
-          src="game/index.html"
-          title="Skybound Game"
-          allowfullscreen
-          allow="autoplay; scripts"
-          scrolling="no">
-        </iframe>
-      </div>
+      <p class="section-sub">Click the button below to start playing instantly.</p>
+      <button class="btn-primary play-open-btn" id="openGame">🎮 START GAME</button>
     </div>
   </section>
 
